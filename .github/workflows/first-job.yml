@@ -1,6 +1,9 @@
 name: API Calls
 
-on: push
+on: 
+  push:
+    branches:
+      -aqib
 
 jobs: 
   first-job:
@@ -8,4 +11,22 @@ jobs:
 
     steps: 
       - name: Print Message
-        run: echo "First message"
+        run: echo "Test cases"
+
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Clone Repository
+        uses: actions/checkout@v4
+         
+      - name: Node Install
+        uses: actions/setup-node@v4
+        with:
+          node-version: 22
+
+      - name: Packages install
+        run: npm install  
+
+      - name: build file
+        run: npm run build
