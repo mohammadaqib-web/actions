@@ -6,6 +6,6 @@ jobs:
   first-job:
     runs-on: ubuntu-latest
 
-  steps: 
-    - name: Print Message
-      run: echo "First message"
+    steps: 
+      - name: Print Message
+        run: echo "First message"
