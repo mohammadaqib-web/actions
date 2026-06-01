@@ -7,16 +7,5 @@ jobs:
   runs-on: ubuntu-latest
 
   steps: 
-    -name: Clone Respository
-    uses: actions/checkout@v4
-
-    -name: Install Node
-    uses: actions/setup-node@v4
-    with:
-      node-version: 22
-
-    -name: Install Dependencies
-    run: npm Install
-
-    -name: Build App
-    run: npm run build
+    -name: My message
+    test: echo "First message"
