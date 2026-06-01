@@ -7,5 +7,5 @@ jobs:
     runs-on: ubuntu-latest
 
   steps: 
-    - name: My message
+    - name: First Message
       run: echo "First message"
