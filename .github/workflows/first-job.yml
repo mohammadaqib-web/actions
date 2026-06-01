@@ -3,8 +3,9 @@ name: API Calls
 on: push
 
 jobs: 
-  runs-on: ubuntu-latest
+  first-job:
+    runs-on: ubuntu-latest
 
   steps: 
     -name: My message
-    test: echo "First message"
+    run: echo "First message"
